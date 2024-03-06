@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+   <head>
+      <title>Registration Form</title>
+      <link href="styles.css" rel="stylesheet">
+      <script src="sjava.js"></script>
+   </head>
+   <body>
+      <h1>Registraion Form</h1>
+      <fieldset>
+         <form onsubmit="return formresult()" action="sucreg.html">
+            <p>
+               First Name :<br><input type="text"id="fname" name="Name" placeholder="Enter Your First Name">
+            </p>
+            <p >
+               Middle Name :<br><input type="text" id="mname" name="mname" placeholder="Enter Your Middle Name">
+            </p>
+            <p>
+               Last Name :<br><input type="text" id="lname" name="lname" placeholder="Enter Your Last Name">
+            </p>
+            <p>
+               <label class="d">Date Of Birth :<br><input type="date" > </label>
+            </p>
+            <p>
+               <label>Phone No :<br><input type="tel" id="num" name="number" placeholder="Enter Your Number"></label>
+            </p>
+            <p>
+               Gender :
+               <lable>
+                  <input type="radio" name="gender" value="male"> Male
+                  <input type="radio" name="gender" value="female"> Female 
+               </lable>
+            <p>
+               <label>Address :<br><input type="text" id="address" placeholder="Enter Your Address">
+               </label>
+            </p>
+            <p>
+               <label>Email :<br><input type="email" id="mail" name="mail" placeholder="Enter Your Email">
+               </label>
+            </p>
+            <p>
+               Course: 
+               <select type="dropdown">
+                  <option>Select</option>
+                  <option name="Btech">Btech</option>
+                  <option name="Diploma">Diploma</option>
+                  <option name="MBA">MBA</option>
+                  <option name="Degree">Degree</option>
+                  <option name="Other">Others</option>
+               </select>
+            </p>
+            <p><label>Password: <br><input type="password" id="pwd" name="pwd" placeholder="Enter The Password">
+               </label>
+            </p>
+            <p>
+               <label>Confirm Password: <br><input type="password" id="cpwd" name="cpwd" placeholder="ReEnter Your Password">
+               </label>
+            </p>
+            <p>
+               Comment:<br>
+               <textarea cols="59" name="Comment"></textarea>
+            </p>
+            <p>
+               <input type="submit" id="submit" name="submit" onclick="formresult()" value="Send">
+               <input type="reset" id="reset" name="Reset" value="Reset">
+            </p>
+            </table>
+         </form>
+      </fieldset>
+   </body>
+</html>
